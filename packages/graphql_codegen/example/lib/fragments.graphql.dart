@@ -27,32 +27,26 @@ class Fragment$PersonSummary {
       nickname: (l$nickname as String?),
       name: (l$name as String),
       dob: l$dob == null ? null : dateTimeFromJson(l$dob),
-      events:
-          (l$events as List<dynamic>?)
-              ?.map((e) => e == null ? null : dateTimeFromJson(e))
-              .toList(),
-      eventsOfEvents:
-          (l$eventsOfEvents as List<dynamic>?)
-              ?.map(
-                (e) =>
-                    (e as List<dynamic>?)
-                        ?.map((e) => e == null ? null : dateTimeFromJson(e))
-                        .toList(),
-              )
-              .toList(),
-      parents:
-          (l$parents as List<dynamic>?)
-              ?.map(
-                (e) =>
-                    Fragment$PersonParent.fromJson((e as Map<String, dynamic>)),
-              )
-              .toList(),
-      favParent:
-          l$favParent == null
-              ? null
-              : Fragment$PersonParent.fromJson(
-                (l$favParent as Map<String, dynamic>),
-              ),
+      events: (l$events as List<dynamic>?)
+          ?.map((e) => e == null ? null : dateTimeFromJson(e))
+          .toList(),
+      eventsOfEvents: (l$eventsOfEvents as List<dynamic>?)
+          ?.map(
+            (e) => (e as List<dynamic>?)
+                ?.map((e) => e == null ? null : dateTimeFromJson(e))
+                .toList(),
+          )
+          .toList(),
+      parents: (l$parents as List<dynamic>?)
+          ?.map(
+            (e) => Fragment$PersonParent.fromJson((e as Map<String, dynamic>)),
+          )
+          .toList(),
+      favParent: l$favParent == null
+          ? null
+          : Fragment$PersonParent.fromJson(
+              (l$favParent as Map<String, dynamic>),
+            ),
       $__typename: (l$$__typename as String),
     );
   }
@@ -82,16 +76,15 @@ class Fragment$PersonSummary {
     final l$dob = dob;
     _resultData['dob'] = l$dob == null ? null : dateTimeToJson(l$dob);
     final l$events = events;
-    _resultData['events'] =
-        l$events?.map((e) => e == null ? null : dateTimeToJson(e)).toList();
+    _resultData['events'] = l$events
+        ?.map((e) => e == null ? null : dateTimeToJson(e))
+        .toList();
     final l$eventsOfEvents = eventsOfEvents;
-    _resultData['eventsOfEvents'] =
-        l$eventsOfEvents
-            ?.map(
-              (e) =>
-                  e?.map((e) => e == null ? null : dateTimeToJson(e)).toList(),
-            )
-            .toList();
+    _resultData['eventsOfEvents'] = l$eventsOfEvents
+        ?.map(
+          (e) => e?.map((e) => e == null ? null : dateTimeToJson(e)).toList(),
+        )
+        .toList();
     final l$parents = parents;
     _resultData['parents'] = l$parents?.map((e) => e.toJson()).toList();
     final l$favParent = favParent;
@@ -119,10 +112,10 @@ class Fragment$PersonSummary {
       l$eventsOfEvents == null
           ? null
           : Object.hashAll(
-            l$eventsOfEvents.map(
-              (v) => v == null ? null : Object.hashAll(v.map((v) => v)),
+              l$eventsOfEvents.map(
+                (v) => v == null ? null : Object.hashAll(v.map((v) => v)),
+              ),
             ),
-          ),
       l$parents == null ? null : Object.hashAll(l$parents.map((v) => v)),
       l$favParent,
       l$$__typename,
@@ -283,33 +276,28 @@ class _CopyWithImpl$Fragment$PersonSummary<TRes>
     Object? $__typename = _undefined,
   }) => _then(
     Fragment$PersonSummary(
-      nickname:
-          nickname == _undefined ? _instance.nickname : (nickname as String?),
-      name:
-          name == _undefined || name == null
-              ? _instance.name
-              : (name as String),
+      nickname: nickname == _undefined
+          ? _instance.nickname
+          : (nickname as String?),
+      name: name == _undefined || name == null
+          ? _instance.name
+          : (name as String),
       dob: dob == _undefined ? _instance.dob : (dob as DateTime?),
-      events:
-          events == _undefined
-              ? _instance.events
-              : (events as List<DateTime?>?),
-      eventsOfEvents:
-          eventsOfEvents == _undefined
-              ? _instance.eventsOfEvents
-              : (eventsOfEvents as List<List<DateTime?>?>?),
-      parents:
-          parents == _undefined
-              ? _instance.parents
-              : (parents as List<Fragment$PersonParent>?),
-      favParent:
-          favParent == _undefined
-              ? _instance.favParent
-              : (favParent as Fragment$PersonParent?),
-      $__typename:
-          $__typename == _undefined || $__typename == null
-              ? _instance.$__typename
-              : ($__typename as String),
+      events: events == _undefined
+          ? _instance.events
+          : (events as List<DateTime?>?),
+      eventsOfEvents: eventsOfEvents == _undefined
+          ? _instance.eventsOfEvents
+          : (eventsOfEvents as List<List<DateTime?>?>?),
+      parents: parents == _undefined
+          ? _instance.parents
+          : (parents as List<Fragment$PersonParent>?),
+      favParent: favParent == _undefined
+          ? _instance.favParent
+          : (favParent as Fragment$PersonParent?),
+      $__typename: $__typename == _undefined || $__typename == null
+          ? _instance.$__typename
+          : ($__typename as String),
     ),
   );
 
@@ -319,12 +307,11 @@ class _CopyWithImpl$Fragment$PersonSummary<TRes>
     )
     _fn,
   ) => call(
-    parents:
-        _fn(
-          _instance.parents?.map(
-            (e) => CopyWith$Fragment$PersonParent(e, (i) => i),
-          ),
-        )?.toList(),
+    parents: _fn(
+      _instance.parents?.map(
+        (e) => CopyWith$Fragment$PersonParent(e, (i) => i),
+      ),
+    )?.toList(),
   );
 
   CopyWith$Fragment$PersonParent<TRes> get favParent {
@@ -332,9 +319,9 @@ class _CopyWithImpl$Fragment$PersonSummary<TRes>
     return local$favParent == null
         ? CopyWith$Fragment$PersonParent.stub(_then(_instance))
         : CopyWith$Fragment$PersonParent(
-          local$favParent,
-          (e) => call(favParent: e),
-        );
+            local$favParent,
+            (e) => call(favParent: e),
+          );
   }
 }
 
@@ -479,6 +466,7 @@ extension ClientExtension$Fragment$PersonSummary on graphql.GraphQLClient {
     data: data.toJson(),
     broadcast: broadcast,
   );
+
   Fragment$PersonSummary? readFragment$PersonSummary({
     required Map<String, dynamic> idFields,
     bool optimistic = true,
@@ -581,14 +569,12 @@ class _CopyWithImpl$Fragment$PersonParent<TRes>
   TRes call({Object? name = _undefined, Object? $__typename = _undefined}) =>
       _then(
         Fragment$PersonParent(
-          name:
-              name == _undefined || name == null
-                  ? _instance.name
-                  : (name as String),
-          $__typename:
-              $__typename == _undefined || $__typename == null
-                  ? _instance.$__typename
-                  : ($__typename as String),
+          name: name == _undefined || name == null
+              ? _instance.name
+              : (name as String),
+          $__typename: $__typename == _undefined || $__typename == null
+              ? _instance.$__typename
+              : ($__typename as String),
         ),
       );
 }
@@ -647,6 +633,7 @@ extension ClientExtension$Fragment$PersonParent on graphql.GraphQLClient {
     data: data.toJson(),
     broadcast: broadcast,
   );
+
   Fragment$PersonParent? readFragment$PersonParent({
     required Map<String, dynamic> idFields,
     bool optimistic = true,
