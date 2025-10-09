@@ -430,6 +430,7 @@ extension ClientExtension$Subscription$NoArgs on graphql.GraphQLClient {
   Stream<graphql.QueryResult<Subscription$NoArgs>> subscribe$NoArgs([
     Options$Subscription$NoArgs? options,
   ]) => this.subscribe(options ?? Options$Subscription$NoArgs());
+
   graphql.ObservableQuery<Subscription$NoArgs> watchSubscription$NoArgs([
     WatchOptions$Subscription$NoArgs? options,
   ]) => this.watchQuery(options ?? WatchOptions$Subscription$NoArgs());
@@ -930,6 +931,7 @@ extension ClientExtension$Subscription$RequiredArg on graphql.GraphQLClient {
   Stream<graphql.QueryResult<Subscription$RequiredArg>> subscribe$RequiredArg(
     Options$Subscription$RequiredArg options,
   ) => this.subscribe(options);
+
   graphql.ObservableQuery<Subscription$RequiredArg>
   watchSubscription$RequiredArg(
     WatchOptions$Subscription$RequiredArg options,
@@ -1446,6 +1448,7 @@ extension ClientExtension$Subscription$OptionalArg on graphql.GraphQLClient {
   Stream<graphql.QueryResult<Subscription$OptionalArg>> subscribe$OptionalArg([
     Options$Subscription$OptionalArg? options,
   ]) => this.subscribe(options ?? Options$Subscription$OptionalArg());
+
   graphql.ObservableQuery<Subscription$OptionalArg>
   watchSubscription$OptionalArg([
     WatchOptions$Subscription$OptionalArg? options,

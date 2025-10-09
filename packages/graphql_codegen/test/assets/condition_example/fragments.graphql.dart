@@ -66,6 +66,7 @@ class Fragment$Condition {
 extension UtilityExtension$Fragment$Condition on Fragment$Condition {
   CopyWith$Fragment$Condition<Fragment$Condition> get copyWith =>
       CopyWith$Fragment$Condition(this, (i) => i);
+
   _T when<_T>({
     required _T Function(Fragment$Condition$$AndCondition) andCondition,
     required _T Function(Fragment$Condition$$TimeCondition) timeCondition,
@@ -721,6 +722,7 @@ extension UtilityExtension$Fragment$CompositeCondition
     on Fragment$CompositeCondition {
   CopyWith$Fragment$CompositeCondition<Fragment$CompositeCondition>
   get copyWith => CopyWith$Fragment$CompositeCondition(this, (i) => i);
+
   _T when<_T>({
     required _T Function(Fragment$CompositeCondition$$AndCondition)
     andCondition,
@@ -1260,6 +1262,7 @@ extension UtilityExtension$Fragment$NonCompositeCondition
     on Fragment$NonCompositeCondition {
   CopyWith$Fragment$NonCompositeCondition<Fragment$NonCompositeCondition>
   get copyWith => CopyWith$Fragment$NonCompositeCondition(this, (i) => i);
+
   _T when<_T>({
     required _T Function(Fragment$NonCompositeCondition$$AndCondition)
     andCondition,

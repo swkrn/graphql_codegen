@@ -583,6 +583,7 @@ class Query$FetchI$i1 {
 extension UtilityExtension$Query$FetchI$i1 on Query$FetchI$i1 {
   CopyWith$Query$FetchI$i1<Query$FetchI$i1> get copyWith =>
       CopyWith$Query$FetchI$i1(this, (i) => i);
+
   _T when<_T>({
     required _T Function(Query$FetchI$i1$$T1) t1,
     required _T Function() orElse,
@@ -734,6 +735,7 @@ class Query$FetchI$i1$i2 {
 extension UtilityExtension$Query$FetchI$i1$i2 on Query$FetchI$i1$i2 {
   CopyWith$Query$FetchI$i1$i2<Query$FetchI$i1$i2> get copyWith =>
       CopyWith$Query$FetchI$i1$i2(this, (i) => i);
+
   _T when<_T>({
     required _T Function(Query$FetchI$i1$i2$$T2) t2,
     required _T Function() orElse,
@@ -885,6 +887,7 @@ extension UtilityExtension$Query$FetchI$i1$i2$field
     on Query$FetchI$i1$i2$field {
   CopyWith$Query$FetchI$i1$i2$field<Query$FetchI$i1$i2$field> get copyWith =>
       CopyWith$Query$FetchI$i1$i2$field(this, (i) => i);
+
   _T when<_T>({
     required _T Function(Query$FetchI$i1$i2$field$$TField) tField,
     required _T Function() orElse,
@@ -1729,6 +1732,7 @@ class Query$FetchI$i1$$T1$i2 implements Query$FetchI$i1$i2 {
 extension UtilityExtension$Query$FetchI$i1$$T1$i2 on Query$FetchI$i1$$T1$i2 {
   CopyWith$Query$FetchI$i1$$T1$i2<Query$FetchI$i1$$T1$i2> get copyWith =>
       CopyWith$Query$FetchI$i1$$T1$i2(this, (i) => i);
+
   _T when<_T>({
     required _T Function(Query$FetchI$i1$$T1$i2$$T2) t2,
     required _T Function() orElse,
@@ -1883,6 +1887,7 @@ extension UtilityExtension$Query$FetchI$i1$$T1$i2$field
     on Query$FetchI$i1$$T1$i2$field {
   CopyWith$Query$FetchI$i1$$T1$i2$field<Query$FetchI$i1$$T1$i2$field>
   get copyWith => CopyWith$Query$FetchI$i1$$T1$i2$field(this, (i) => i);
+
   _T when<_T>({
     required _T Function(Query$FetchI$i1$$T1$i2$field$$TField) tField,
     required _T Function() orElse,

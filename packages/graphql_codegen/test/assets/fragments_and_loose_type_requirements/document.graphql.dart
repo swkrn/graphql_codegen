@@ -244,6 +244,7 @@ class Fragment$F {
 extension UtilityExtension$Fragment$F on Fragment$F {
   CopyWith$Fragment$F<Fragment$F> get copyWith =>
       CopyWith$Fragment$F(this, (i) => i);
+
   _T when<_T>({
     required _T Function(Fragment$F$$T) t,
     required _T Function() orElse,

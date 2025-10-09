@@ -427,6 +427,7 @@ extension ClientExtension$Fragment$NameNode on graphql.GraphQLClient {
     data: data.toJson(),
     broadcast: broadcast,
   );
+
   Fragment$NameNode? readFragment$NameNode({
     required Map<String, dynamic> idFields,
     required Variables$Fragment$NameNode variables,
@@ -791,8 +792,10 @@ class FetchMoreOptions$Query$Q extends graphql.FetchMoreOptions {
 extension ClientExtension$Query$Q on graphql.GraphQLClient {
   Future<graphql.QueryResult<Query$Q>> query$Q(Options$Query$Q options) async =>
       await this.query(options);
+
   graphql.ObservableQuery<Query$Q> watchQuery$Q(WatchOptions$Query$Q options) =>
       this.watchQuery(options);
+
   void writeQuery$Q({
     required Query$Q data,
     required Variables$Query$Q variables,
@@ -805,6 +808,7 @@ extension ClientExtension$Query$Q on graphql.GraphQLClient {
     data: data.toJson(),
     broadcast: broadcast,
   );
+
   Query$Q? readQuery$Q({
     required Variables$Query$Q variables,
     bool optimistic = true,

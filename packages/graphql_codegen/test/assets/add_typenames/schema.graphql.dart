@@ -864,6 +864,7 @@ extension UtilityExtension$Query$Q$docsWithTypename
     on Query$Q$docsWithTypename {
   CopyWith$Query$Q$docsWithTypename<Query$Q$docsWithTypename> get copyWith =>
       CopyWith$Query$Q$docsWithTypename(this, (i) => i);
+
   _T when<_T>({
     required _T Function(Query$Q$docsWithTypename$$Contract) contract,
     required _T Function(Query$Q$docsWithTypename$$Report) report,
@@ -1197,6 +1198,7 @@ extension UtilityExtension$Query$Q$docsWihtoutTypename
     on Query$Q$docsWihtoutTypename {
   CopyWith$Query$Q$docsWihtoutTypename<Query$Q$docsWihtoutTypename>
   get copyWith => CopyWith$Query$Q$docsWihtoutTypename(this, (i) => i);
+
   _T when<_T>({
     required _T Function(Query$Q$docsWihtoutTypename$$Contract) contract,
     required _T Function(Query$Q$docsWihtoutTypename$$Report) report,
@@ -1847,6 +1849,7 @@ extension UtilityExtension$Query$Q$docsWithFragment
     on Query$Q$docsWithFragment {
   CopyWith$Query$Q$docsWithFragment<Query$Q$docsWithFragment> get copyWith =>
       CopyWith$Query$Q$docsWithFragment(this, (i) => i);
+
   _T when<_T>({
     required _T Function(Query$Q$docsWithFragment$$Contract) contract,
     required _T Function(Query$Q$docsWithFragment$$Report) report,

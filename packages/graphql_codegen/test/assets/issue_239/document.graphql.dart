@@ -579,6 +579,7 @@ class Query$Q$booking {
 extension UtilityExtension$Query$Q$booking on Query$Q$booking {
   CopyWith$Query$Q$booking<Query$Q$booking> get copyWith =>
       CopyWith$Query$Q$booking(this, (i) => i);
+
   _T when<_T>({
     required _T Function(Query$Q$booking$$HotelBooking) hotelBooking,
     required _T Function() orElse,

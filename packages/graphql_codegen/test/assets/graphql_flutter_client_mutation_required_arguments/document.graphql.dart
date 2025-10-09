@@ -483,6 +483,7 @@ extension ClientExtension$Mutation$UpdateSRequired on graphql.GraphQLClient {
   Future<graphql.QueryResult<Mutation$UpdateSRequired>> mutate$UpdateSRequired(
     Options$Mutation$UpdateSRequired options,
   ) async => await this.mutate(options);
+
   graphql.ObservableQuery<Mutation$UpdateSRequired>
   watchMutation$UpdateSRequired(
     WatchOptions$Mutation$UpdateSRequired options,

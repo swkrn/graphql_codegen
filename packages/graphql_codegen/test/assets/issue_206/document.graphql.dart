@@ -248,6 +248,7 @@ class Fragment$EventFragment {
 extension UtilityExtension$Fragment$EventFragment on Fragment$EventFragment {
   CopyWith$Fragment$EventFragment<Fragment$EventFragment> get copyWith =>
       CopyWith$Fragment$EventFragment(this, (i) => i);
+
   _T when<_T>({
     required _T Function(Fragment$EventFragment$$EventPublic) eventPublic,
     required _T Function() orElse,
@@ -1190,6 +1191,7 @@ class Mutation$Bla$bla {
 extension UtilityExtension$Mutation$Bla$bla on Mutation$Bla$bla {
   CopyWith$Mutation$Bla$bla<Mutation$Bla$bla> get copyWith =>
       CopyWith$Mutation$Bla$bla(this, (i) => i);
+
   _T when<_T>({
     required _T Function(Mutation$Bla$bla$$EventPublic) eventPublic,
     required _T Function() orElse,

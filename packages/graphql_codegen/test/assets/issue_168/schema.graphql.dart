@@ -946,6 +946,7 @@ extension UtilityExtension$Query$WalletGetContent$walletGetContent$blocks
   >
   get copyWith =>
       CopyWith$Query$WalletGetContent$walletGetContent$blocks(this, (i) => i);
+
   _T when<_T>({
     required _T Function(
       Query$WalletGetContent$walletGetContent$blocks$$WalletContentBlockList,
@@ -1553,6 +1554,7 @@ extension UtilityExtension$Query$WalletGetContent$walletGetContent$blocks$$Walle
         this,
         (i) => i,
       );
+
   _T when<_T>({
     required _T Function(
       Query$WalletGetContent$walletGetContent$blocks$$WalletContentBlockList$items$$WalletContentItemContentPreview,

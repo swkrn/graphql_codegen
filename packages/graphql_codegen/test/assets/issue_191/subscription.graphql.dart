@@ -195,6 +195,7 @@ extension ClientExtension$Subscription$S on graphql.GraphQLClient {
   Stream<graphql.QueryResult<Subscription$S>> subscribe$S([
     Options$Subscription$S? options,
   ]) => this.subscribe(options ?? Options$Subscription$S());
+
   graphql.ObservableQuery<Subscription$S> watchSubscription$S([
     WatchOptions$Subscription$S? options,
   ]) => this.watchQuery(options ?? WatchOptions$Subscription$S());

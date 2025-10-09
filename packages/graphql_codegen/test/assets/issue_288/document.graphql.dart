@@ -850,6 +850,7 @@ extension UtilityExtension$Fragment$FullUser$notifications
     on Fragment$FullUser$notifications {
   CopyWith$Fragment$FullUser$notifications<Fragment$FullUser$notifications>
   get copyWith => CopyWith$Fragment$FullUser$notifications(this, (i) => i);
+
   _T when<_T>({
     required _T Function(
       Fragment$FullUser$notifications$$FriendRequestNotification,
@@ -2034,6 +2035,7 @@ extension UtilityExtension$Query$GetNotifications$getUser$notifications
   >
   get copyWith =>
       CopyWith$Query$GetNotifications$getUser$notifications(this, (i) => i);
+
   _T when<_T>({
     required _T Function(
       Query$GetNotifications$getUser$notifications$$FriendRequestNotification,

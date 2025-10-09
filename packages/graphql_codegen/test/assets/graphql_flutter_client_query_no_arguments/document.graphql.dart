@@ -386,10 +386,12 @@ extension ClientExtension$Query$FetchSNoVariables on graphql.GraphQLClient {
   Future<graphql.QueryResult<Query$FetchSNoVariables>> query$FetchSNoVariables([
     Options$Query$FetchSNoVariables? options,
   ]) async => await this.query(options ?? Options$Query$FetchSNoVariables());
+
   graphql.ObservableQuery<Query$FetchSNoVariables>
   watchQuery$FetchSNoVariables([
     WatchOptions$Query$FetchSNoVariables? options,
   ]) => this.watchQuery(options ?? WatchOptions$Query$FetchSNoVariables());
+
   void writeQuery$FetchSNoVariables({
     required Query$FetchSNoVariables data,
     bool broadcast = true,
@@ -402,6 +404,7 @@ extension ClientExtension$Query$FetchSNoVariables on graphql.GraphQLClient {
     data: data.toJson(),
     broadcast: broadcast,
   );
+
   Query$FetchSNoVariables? readQuery$FetchSNoVariables({
     bool optimistic = true,
   }) {

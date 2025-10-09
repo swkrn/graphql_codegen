@@ -376,6 +376,7 @@ extension ClientExtension$Fragment$F1 on graphql.GraphQLClient {
     data: data.toJson(),
     broadcast: broadcast,
   );
+
   Fragment$F1? readFragment$F1({
     required Map<String, dynamic> idFields,
     bool optimistic = true,

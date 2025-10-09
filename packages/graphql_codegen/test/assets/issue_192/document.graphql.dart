@@ -424,6 +424,7 @@ class Query$Q$book {
 extension UtilityExtension$Query$Q$book on Query$Q$book {
   CopyWith$Query$Q$book<Query$Q$book> get copyWith =>
       CopyWith$Query$Q$book(this, (i) => i);
+
   _T when<_T>({
     required _T Function(Query$Q$book$$TextBook) textBook,
     required _T Function() orElse,

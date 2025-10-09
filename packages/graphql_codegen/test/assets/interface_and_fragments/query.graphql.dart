@@ -540,6 +540,7 @@ extension UtilityExtension$Query$FetchImplementations$interface
     Query$FetchImplementations$interface
   >
   get copyWith => CopyWith$Query$FetchImplementations$interface(this, (i) => i);
+
   _T when<_T>({
     required _T Function(Query$FetchImplementations$interface$$ImplementationA)
     implementationA,
@@ -731,6 +732,7 @@ extension UtilityExtension$Query$FetchImplementations$interface$self
   >
   get copyWith =>
       CopyWith$Query$FetchImplementations$interface$self(this, (i) => i);
+
   _T when<_T>({
     required _T Function(
       Query$FetchImplementations$interface$self$$ImplementationA,

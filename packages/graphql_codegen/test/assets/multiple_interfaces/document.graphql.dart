@@ -1055,6 +1055,7 @@ class Query$Q$field implements Fragment$F0 {
 extension UtilityExtension$Query$Q$field on Query$Q$field {
   CopyWith$Query$Q$field<Query$Q$field> get copyWith =>
       CopyWith$Query$Q$field(this, (i) => i);
+
   _T when<_T>({
     required _T Function(Query$Q$field$$T1) t1,
     required _T Function() orElse,

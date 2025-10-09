@@ -209,6 +209,7 @@ extension ClientExtension$Mutation$M on graphql.GraphQLClient {
   Future<graphql.QueryResult<Mutation$M>> mutate$M([
     Options$Mutation$M? options,
   ]) async => await this.mutate(options ?? Options$Mutation$M());
+
   graphql.ObservableQuery<Mutation$M> watchMutation$M([
     WatchOptions$Mutation$M? options,
   ]) => this.watchMutation(options ?? WatchOptions$Mutation$M());

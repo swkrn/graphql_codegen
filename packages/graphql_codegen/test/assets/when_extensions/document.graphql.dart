@@ -458,6 +458,7 @@ class Query$Query$u {
 extension UtilityExtension$Query$Query$u on Query$Query$u {
   CopyWith$Query$Query$u<Query$Query$u> get copyWith =>
       CopyWith$Query$Query$u(this, (i) => i);
+
   _T when<_T>({
     required _T Function(Query$Query$u$$TA) tA,
     required _T Function(Query$Query$u$$TB) tB,

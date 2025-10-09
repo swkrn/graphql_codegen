@@ -307,6 +307,7 @@ extension ClientExtension$Fragment$NoVariables on graphql.GraphQLClient {
     data: data.toJson(),
     broadcast: broadcast,
   );
+
   Fragment$NoVariables? readFragment$NoVariables({
     required Map<String, dynamic> idFields,
     bool optimistic = true,
@@ -563,6 +564,7 @@ extension ClientExtension$Fragment$WithOptionalVariables
     data: data.toJson(),
     broadcast: broadcast,
   );
+
   Fragment$WithOptionalVariables? readFragment$WithOptionalVariables({
     required Map<String, dynamic> idFields,
     Variables$Fragment$WithOptionalVariables? variables,
@@ -803,6 +805,7 @@ extension ClientExtension$Fragment$WithVariables on graphql.GraphQLClient {
     data: data.toJson(),
     broadcast: broadcast,
   );
+
   Fragment$WithVariables? readFragment$WithVariables({
     required Map<String, dynamic> idFields,
     required Variables$Fragment$WithVariables variables,
@@ -1136,9 +1139,11 @@ extension ClientExtension$Query$FetchSOptional on graphql.GraphQLClient {
   Future<graphql.QueryResult<Query$FetchSOptional>> query$FetchSOptional([
     Options$Query$FetchSOptional? options,
   ]) async => await this.query(options ?? Options$Query$FetchSOptional());
+
   graphql.ObservableQuery<Query$FetchSOptional> watchQuery$FetchSOptional([
     WatchOptions$Query$FetchSOptional? options,
   ]) => this.watchQuery(options ?? WatchOptions$Query$FetchSOptional());
+
   void writeQuery$FetchSOptional({
     required Query$FetchSOptional data,
     Variables$Query$FetchSOptional? variables,
@@ -1151,6 +1156,7 @@ extension ClientExtension$Query$FetchSOptional on graphql.GraphQLClient {
     data: data.toJson(),
     broadcast: broadcast,
   );
+
   Query$FetchSOptional? readQuery$FetchSOptional({
     Variables$Query$FetchSOptional? variables,
     bool optimistic = true,
@@ -1469,9 +1475,11 @@ extension ClientExtension$Query$FetchSRequired on graphql.GraphQLClient {
   Future<graphql.QueryResult<Query$FetchSRequired>> query$FetchSRequired(
     Options$Query$FetchSRequired options,
   ) async => await this.query(options);
+
   graphql.ObservableQuery<Query$FetchSRequired> watchQuery$FetchSRequired(
     WatchOptions$Query$FetchSRequired options,
   ) => this.watchQuery(options);
+
   void writeQuery$FetchSRequired({
     required Query$FetchSRequired data,
     required Variables$Query$FetchSRequired variables,
@@ -1484,6 +1492,7 @@ extension ClientExtension$Query$FetchSRequired on graphql.GraphQLClient {
     data: data.toJson(),
     broadcast: broadcast,
   );
+
   Query$FetchSRequired? readQuery$FetchSRequired({
     required Variables$Query$FetchSRequired variables,
     bool optimistic = true,
@@ -1700,10 +1709,12 @@ extension ClientExtension$Query$FetchSNoVariables on graphql.GraphQLClient {
   Future<graphql.QueryResult<Query$FetchSNoVariables>> query$FetchSNoVariables([
     Options$Query$FetchSNoVariables? options,
   ]) async => await this.query(options ?? Options$Query$FetchSNoVariables());
+
   graphql.ObservableQuery<Query$FetchSNoVariables>
   watchQuery$FetchSNoVariables([
     WatchOptions$Query$FetchSNoVariables? options,
   ]) => this.watchQuery(options ?? WatchOptions$Query$FetchSNoVariables());
+
   void writeQuery$FetchSNoVariables({
     required Query$FetchSNoVariables data,
     bool broadcast = true,
@@ -1716,6 +1727,7 @@ extension ClientExtension$Query$FetchSNoVariables on graphql.GraphQLClient {
     data: data.toJson(),
     broadcast: broadcast,
   );
+
   Query$FetchSNoVariables? readQuery$FetchSNoVariables({
     bool optimistic = true,
   }) {
@@ -2039,6 +2051,7 @@ extension ClientExtension$Mutation$UpdateSOptional on graphql.GraphQLClient {
   Future<graphql.QueryResult<Mutation$UpdateSOptional>> mutate$UpdateSOptional([
     Options$Mutation$UpdateSOptional? options,
   ]) async => await this.mutate(options ?? Options$Mutation$UpdateSOptional());
+
   graphql.ObservableQuery<Mutation$UpdateSOptional>
   watchMutation$UpdateSOptional([
     WatchOptions$Mutation$UpdateSOptional? options,
@@ -2343,6 +2356,7 @@ extension ClientExtension$Mutation$UpdateSRequired on graphql.GraphQLClient {
   Future<graphql.QueryResult<Mutation$UpdateSRequired>> mutate$UpdateSRequired(
     Options$Mutation$UpdateSRequired options,
   ) async => await this.mutate(options);
+
   graphql.ObservableQuery<Mutation$UpdateSRequired>
   watchMutation$UpdateSRequired(
     WatchOptions$Mutation$UpdateSRequired options,
@@ -2551,6 +2565,7 @@ extension ClientExtension$Mutation$UpdateSNoVariables on graphql.GraphQLClient {
     Options$Mutation$UpdateSNoVariables? options,
   ]) async =>
       await this.mutate(options ?? Options$Mutation$UpdateSNoVariables());
+
   graphql.ObservableQuery<Mutation$UpdateSNoVariables>
   watchMutation$UpdateSNoVariables([
     WatchOptions$Mutation$UpdateSNoVariables? options,

@@ -394,6 +394,7 @@ class Fragment$FragmentI {
 extension UtilityExtension$Fragment$FragmentI on Fragment$FragmentI {
   CopyWith$Fragment$FragmentI<Fragment$FragmentI> get copyWith =>
       CopyWith$Fragment$FragmentI(this, (i) => i);
+
   _T when<_T>({
     required _T Function(Fragment$FragmentI$$FieldA) fieldA,
     required _T Function() orElse,
@@ -884,6 +885,7 @@ class Query$FetchStuff$field {
 extension UtilityExtension$Query$FetchStuff$field on Query$FetchStuff$field {
   CopyWith$Query$FetchStuff$field<Query$FetchStuff$field> get copyWith =>
       CopyWith$Query$FetchStuff$field(this, (i) => i);
+
   _T when<_T>({
     required _T Function(Query$FetchStuff$field$$FieldA) fieldA,
     required _T Function() orElse,

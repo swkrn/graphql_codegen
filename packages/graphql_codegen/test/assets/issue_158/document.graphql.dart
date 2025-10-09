@@ -244,6 +244,7 @@ class Fragment$PersonSummary {
 extension UtilityExtension$Fragment$PersonSummary on Fragment$PersonSummary {
   CopyWith$Fragment$PersonSummary<Fragment$PersonSummary> get copyWith =>
       CopyWith$Fragment$PersonSummary(this, (i) => i);
+
   _T when<_T>({
     required _T Function(Fragment$PersonSummary$$Person) person,
     required _T Function() orElse,

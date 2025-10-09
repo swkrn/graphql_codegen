@@ -488,9 +488,11 @@ extension ClientExtension$Query$FetchSRequired on graphql.GraphQLClient {
   Future<graphql.QueryResult<Query$FetchSRequired>> query$FetchSRequired(
     Options$Query$FetchSRequired options,
   ) async => await this.query(options);
+
   graphql.ObservableQuery<Query$FetchSRequired> watchQuery$FetchSRequired(
     WatchOptions$Query$FetchSRequired options,
   ) => this.watchQuery(options);
+
   void writeQuery$FetchSRequired({
     required Query$FetchSRequired data,
     required Variables$Query$FetchSRequired variables,
@@ -503,6 +505,7 @@ extension ClientExtension$Query$FetchSRequired on graphql.GraphQLClient {
     data: data.toJson(),
     broadcast: broadcast,
   );
+
   Query$FetchSRequired? readQuery$FetchSRequired({
     required Variables$Query$FetchSRequired variables,
     bool optimistic = true,
