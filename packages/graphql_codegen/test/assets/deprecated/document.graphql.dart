@@ -1,5 +1,118 @@
 import 'package:gql/ast.dart';
 
+class Input$I {
+  factory Input$I({String? a, @Deprecated('Please don\'t') String? d}) =>
+      Input$I._({if (a != null) r'a': a, if (d != null) r'd': d});
+
+  Input$I._(this._$data);
+
+  factory Input$I.fromJson(Map<String, dynamic> data) {
+    final result$data = <String, dynamic>{};
+    if (data.containsKey('a')) {
+      final l$a = data['a'];
+      result$data['a'] = (l$a as String?);
+    }
+    if (data.containsKey('d')) {
+      final l$d = data['d'];
+      result$data['d'] = (l$d as String?);
+    }
+    return Input$I._(result$data);
+  }
+
+  Map<String, dynamic> _$data;
+
+  String? get a => (_$data['a'] as String?);
+
+  String? get d => (_$data['d'] as String?);
+
+  Map<String, dynamic> toJson() {
+    final result$data = <String, dynamic>{};
+    if (_$data.containsKey('a')) {
+      final l$a = a;
+      result$data['a'] = l$a;
+    }
+    if (_$data.containsKey('d')) {
+      final l$d = d;
+      result$data['d'] = l$d;
+    }
+    return result$data;
+  }
+
+  CopyWith$Input$I<Input$I> get copyWith => CopyWith$Input$I(this, (i) => i);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(this, other)) {
+      return true;
+    }
+    if (other is! Input$I || runtimeType != other.runtimeType) {
+      return false;
+    }
+    final l$a = a;
+    final lOther$a = other.a;
+    if (_$data.containsKey('a') != other._$data.containsKey('a')) {
+      return false;
+    }
+    if (l$a != lOther$a) {
+      return false;
+    }
+    final l$d = d;
+    final lOther$d = other.d;
+    if (_$data.containsKey('d') != other._$data.containsKey('d')) {
+      return false;
+    }
+    if (l$d != lOther$d) {
+      return false;
+    }
+    return true;
+  }
+
+  @override
+  int get hashCode {
+    final l$a = a;
+    final l$d = d;
+    return Object.hashAll([
+      _$data.containsKey('a') ? l$a : const {},
+      _$data.containsKey('d') ? l$d : const {},
+    ]);
+  }
+}
+
+abstract class CopyWith$Input$I<TRes> {
+  factory CopyWith$Input$I(Input$I instance, TRes Function(Input$I) then) =
+      _CopyWithImpl$Input$I;
+
+  factory CopyWith$Input$I.stub(TRes res) = _CopyWithStubImpl$Input$I;
+
+  TRes call({String? a, String? d});
+}
+
+class _CopyWithImpl$Input$I<TRes> implements CopyWith$Input$I<TRes> {
+  _CopyWithImpl$Input$I(this._instance, this._then);
+
+  final Input$I _instance;
+
+  final TRes Function(Input$I) _then;
+
+  static const _undefined = <dynamic, dynamic>{};
+
+  TRes call({Object? a = _undefined, Object? d = _undefined}) => _then(
+    Input$I._({
+      ..._instance._$data,
+      if (a != _undefined) 'a': (a as String?),
+      if (d != _undefined) 'd': (d as String?),
+    }),
+  );
+}
+
+class _CopyWithStubImpl$Input$I<TRes> implements CopyWith$Input$I<TRes> {
+  _CopyWithStubImpl$Input$I(this._res);
+
+  TRes _res;
+
+  call({String? a, String? d}) => _res;
+}
+
 enum Enum$E {
   A,
   B,

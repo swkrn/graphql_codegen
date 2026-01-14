@@ -11,3 +11,8 @@ enum E {
 query Q {
     deprecatedField
 }
+
+input I {
+    a: String
+    d: String @deprecated(reason: "Please don't")
+}

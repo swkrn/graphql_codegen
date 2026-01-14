@@ -11,6 +11,7 @@ import 'package:graphql_codegen/src/printer/base/undefined.dart';
 import 'package:graphql_codegen/src/printer/clients/utils.dart';
 import 'package:graphql_codegen/src/printer/context.dart';
 import 'package:graphql_codegen/src/printer/utils.dart';
+import 'package:graphql_codegen/src/printer/base/deprecation.dart';
 
 List<Spec> printInputClasses(PrintContext<ContextInput> context) =>
     _printInputClasses(
@@ -34,11 +35,17 @@ List<Spec> _printInputClasses({
     properties.map(
       (property) => Parameter((b) {
         final innerType = printClassPropertyType(context, property);
+        final deprecationReason = extractDeprecatedReason(property.directives);
+
         b
           ..named = true
           ..required = property.isRequired
           ..type = property.hasDefaultValue ? asNullable(innerType) : innerType
-          ..name = context.namePrinter.printPropertyName(property.name);
+          ..name = context.namePrinter.printPropertyName(property.name)
+          ..annotations = ListBuilder([
+            if (deprecationReason != null)
+              refer('Deprecated').call([literalString(deprecationReason)]),
+          ]);
       }),
     ),
   );
